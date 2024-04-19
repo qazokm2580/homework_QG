@@ -101,7 +101,9 @@ Status DeleteList_DuL(DuLNode *p, ElemType *e);
  *  @notice      : None
  */
 void TraverseList_DuL(DuLinkedList L, void (*visit)(ElemType e));
-
+void visit(ElemType e);
+DuLNode *createDuNode(ElemType e);
+Status addDuNode(DuLinkedList L, ElemType e);
 
  /**************************************************************
 *	End-Multi-Include-Prevent Section
